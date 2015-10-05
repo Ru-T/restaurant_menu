@@ -12,10 +12,9 @@
         <%= image_tag asset_url "baklava.jpg", class: "menu-image" %>
       <% end %>
       <% course.dishes.each do |dish| %>
-          <p><%= dish.name %></p>
+          <p><a href= <%= edit_dish_path(dish) %>> <%= dish.name%></a></p>
           <p>Description: <%= dish.description %></p>
           <p>Price: <%= dish.price %></p>
-          <%= link_to 'edit', edit_dish_path(dish) %>
       <% end %>
     <p><%= link_to 'New Dish', new_dish_path %></p>
 <% end %>
