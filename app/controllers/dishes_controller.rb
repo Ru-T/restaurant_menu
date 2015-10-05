@@ -4,6 +4,7 @@ class DishesController < ApplicationController
   # GET /dishes
   def index
     @dishes = Dish.all
+    @courses = Course.all
   end
 
   # GET /dishes/1
