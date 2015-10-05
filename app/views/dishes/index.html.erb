@@ -3,7 +3,7 @@
 <h1>Restaurant Menu</h1>
 
 <% @courses.each do |course| %>
-    <p><%= course.name %></p>
+    <h2><%= course.name %></h2>
       <% if course.id == 1 %>
         <%= image_tag asset_url("appetizers.jpg"), class: "menu-image" %>
       <% elsif course.id == 2 %>
