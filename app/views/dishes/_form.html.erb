@@ -23,10 +23,14 @@
     <%= f.label :price %><br>
     <%= f.text_field :price %>
   </div>
-  <div class="field">
-    <%= f.label :course_id %><br>
-    <%= f.number_field :course_id %>
-  </div>
+<% if params[:course_id] %>
+  <%= f.hidden_field :course_id %>
+<% else %>
+    <div class="field">
+      <%= f.label :course_id %><br>
+      <%= f.number_field :course_id %>
+    </div>
+<% end %>
   <div class="actions">
     <%= f.submit %>
   </div>

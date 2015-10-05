@@ -16,5 +16,5 @@
           <p>Description: <%= dish.description %></p>
           <p>Price: <%= dish.price %></p>
       <% end %>
-    <p><%= link_to 'New Dish', new_dish_path %></p>
+    <p><%= link_to 'New Dish', new_dish_path(course_id: course.id)%></p>
 <% end %>
