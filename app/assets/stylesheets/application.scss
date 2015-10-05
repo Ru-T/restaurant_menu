@@ -14,7 +14,5 @@
  *= require_self
  */
 
- .menu-image {
-   height: 40px;
-   width: 50px;
- }
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
