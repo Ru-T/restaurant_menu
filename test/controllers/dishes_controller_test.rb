@@ -21,12 +21,7 @@ class DishesControllerTest < ActionController::TestCase
       post :create, dish: { course_id: @dish.course_id, description: @dish.description, name: @dish.name, price: @dish.price }
     end
 
-    assert_redirected_to dish_path(assigns(:dish))
-  end
-
-  test "should show dish" do
-    get :show, id: @dish
-    assert_response :success
+    assert_redirected_to dishes_path
   end
 
   test "should get edit" do
@@ -36,7 +31,7 @@ class DishesControllerTest < ActionController::TestCase
 
   test "should update dish" do
     patch :update, id: @dish, dish: { course_id: @dish.course_id, description: @dish.description, name: @dish.name, price: @dish.price }
-    assert_redirected_to dish_path(assigns(:dish))
+    assert_redirected_to dishes_path
   end
 
   test "should destroy dish" do
