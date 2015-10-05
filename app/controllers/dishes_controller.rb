@@ -9,6 +9,7 @@ class DishesController < ApplicationController
 
   # GET /dishes/1
   def show
+    redirect_to dishes_path
   end
 
   # GET /dishes/new
@@ -25,7 +26,7 @@ class DishesController < ApplicationController
     @dish = Dish.new(dish_params)
 
     if @dish.save
-      redirect_to @dish, notice: 'Dish was successfully created.'
+      redirect_to dishes_path, notice: 'Dish was successfully created.'
     else
       render :new
     end
