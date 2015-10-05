@@ -4,12 +4,18 @@
 
 <% @courses.each do |course| %>
     <p><%= course.name %></p>
+      <% if course.id == 1 %>
+        <%= image_tag asset_url "appetizers.jpg", class: "menu-image" %>
+      <% elsif course.id == 2 %>
+        <%= image_tag asset_url "tagine.jpg", class: "menu-image" %>
+      <% else course.id == 3 %>
+        <%= image_tag asset_url "baklava.jpg", class: "menu-image" %>
+      <% end %>
       <% course.dishes.each do |dish| %>
           <p><%= dish.name %></p>
           <p>Description: <%= dish.description %></p>
           <p>Price: <%= dish.price %></p>
           <%= link_to 'edit', edit_dish_path(dish) %>
       <% end %>
+    <p><%= link_to 'New Dish', new_dish_path %></p>
 <% end %>
-
-<%= link_to 'New Dish', new_dish_path %>
