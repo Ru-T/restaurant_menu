@@ -1,6 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Dishes</h1>
+<h1>Restaurant Menu</h1>
+
+
+
+
+
+
 
 <table>
   <thead>
@@ -20,9 +26,7 @@
         <td><%= dish.description %></td>
         <td><%= dish.price %></td>
         <td><%= dish.course_id %></td>
-        <td><%= link_to 'Show', dish %></td>
         <td><%= link_to 'Edit', edit_dish_path(dish) %></td>
-        <td><%= link_to 'Destroy', dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
