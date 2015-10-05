@@ -43,7 +43,7 @@ class DishesController < ApplicationController
   end
 
   # DELETE /dishes/1
-  def delete
+  def destroy
     @dish.destroy
     redirect_to dishes_path, notice: 'Dish was successfully destroyed.'
   end
