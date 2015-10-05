@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :dishes
+  root 'dishes#index'
+  resources :dishes
+  resources :courses
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -13,14 +17,6 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-
-  root 'dishes#index'
-  resources :courses
-  resources :dishes
-
-
-
-
 
   # Example resource route with options:
   #   resources :products do
