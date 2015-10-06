@@ -3,7 +3,6 @@ class DishesController < ApplicationController
 
   # GET /dishes
   def index
-    @dishes = Dish.all
     @courses = Course.all
   end
 
@@ -19,7 +18,6 @@ class DishesController < ApplicationController
 
   # GET /dishes/1/edit
   def edit
-    @dishes = Dish.all
   end
 
   # POST /dishes
