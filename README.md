@@ -16,7 +16,7 @@
 
 [ ] The application should utilize the (a) variable assignment and (b) selector nesting features of SCSS.
 
-[ ] The application may utilize Bootstrap.
+[X] The application may utilize Bootstrap.
 
 [X] The application should be deployed to Heroku.
 

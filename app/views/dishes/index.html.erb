@@ -6,7 +6,9 @@
 
 <% @courses.each do |course| %>
   <div class="row">
-    <div class="col-md-4"><h3 class="text-center"><%= course.name %></h3>
+    <div class="col-md-4"><h3 class="text-center"><%= course.name %>
+      <button type="button" class="btn btn-warning"><%= link_to 'New Dish', new_dish_path(course_id: course.id)%></button>
+    </h3>
       <% if course.id == 1 %>
       <%= image_tag asset_url("appetizers.jpg"), class: "img-circle" %>
       <% elsif course.id == 2 %>
@@ -15,21 +17,20 @@
         <%= image_tag asset_url("baklava.jpg"), class: "img-circle" %>
       <% end %>
     </div>
-      <div class="col-md-2">
+      <div class="col-md-4">
       <% course.dishes.each do |dish| %>
-          <dl class="dl-horizontal">
+          <dl>
             <br />
             <dt><a href= <%= edit_dish_path(dish) %>> <%= dish.name%></a></p></dt>
           </div>
       <div class="col-md-6">
-            <br />
             <dd>Description: <%= dish.description %></dd>
             <br />
             <dd>Price: $<%= dish.price.to_i %></dd>
             <br />
-            <dd><button type="button" class="btn btn-warning"><%= link_to 'New Dish', new_dish_path(course_id: course.id)%></button></dd>
+          <% end %>
           </dl>
-      <% end %>
+        <br />
     </div>
   </div>
 <% end %>
