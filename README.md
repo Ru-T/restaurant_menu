@@ -14,7 +14,7 @@
 
 [X] After creating or editing a dish, the user should be redirected to the menu page, not the show page.
 
-[ ] The application should utilize the (a) variable assignment and (b) selector nesting features of SCSS.
+[X] The application should utilize the (a) variable assignment and (b) selector nesting features of SCSS.
 
 [X] The application may utilize Bootstrap.
 

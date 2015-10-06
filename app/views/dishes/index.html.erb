@@ -24,9 +24,9 @@
             <dt id="dish_name"><a href= <%= edit_dish_path(dish) %>> <%= dish.name%></a></p></dt>
           </div>
       <div class="col-md-6">
-            <dd><scan id="dish">Description:</scan> <%= dish.description %></dd>
+            <dd class="details"><scan id="dish">Description:</scan> <%= dish.description %></dd>
             <br />
-            <dd><scan id="dish">Price:</scan> $<%= dish.price.to_i %></dd>
+            <dd class="details"><scan id="dish">Price:</scan> $<%= dish.price.to_i %></dd>
             <br />
           <% end %>
           </dl>

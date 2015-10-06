@@ -12,10 +12,13 @@ $marigold: #FF6D24;
   padding-bottom: 10px;
 }
 
-#dish {
-  color: $marigold;
-}
-
 #dish_name {
   font-size: 16px;
+}
+
+.details {
+  font-style: italic;
+    #dish {
+      color: $marigold;
+    }
 }
