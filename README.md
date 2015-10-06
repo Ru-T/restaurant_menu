@@ -8,6 +8,10 @@ The user can create a new dish from the menu and it will default to the course t
 
 The courses cannot be edited.
 
+##Heroku App
+
+https://rutionrails-restaurant-menu.herokuapp.com
+
 ##Database Structure
 
 ![alt tag](https://github.com/Ru-T/restaurant_menu/blob/master/app/assets/images/database_table.png)
