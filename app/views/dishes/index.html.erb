@@ -2,7 +2,7 @@
 
   <p id="notice"><%= notice %></p>
 
-<h2 class="text-center">Restaurant Menu</h2>
+<p class="header">Ruti's Mediterranean Menu</p>
 
 <% @courses.each do |course| %>
   <div class="row">
@@ -21,12 +21,12 @@
       <% course.dishes.each do |dish| %>
           <dl>
             <br />
-            <dt><a href= <%= edit_dish_path(dish) %>> <%= dish.name%></a></p></dt>
+            <dt id="dish_name"><a href= <%= edit_dish_path(dish) %>> <%= dish.name%></a></p></dt>
           </div>
       <div class="col-md-6">
-            <dd>Description: <%= dish.description %></dd>
+            <dd><scan id="dish">Description:</scan> <%= dish.description %></dd>
             <br />
-            <dd>Price: $<%= dish.price.to_i %></dd>
+            <dd><scan id="dish">Price:</scan> $<%= dish.price.to_i %></dd>
             <br />
           <% end %>
           </dl>
