@@ -1,7 +1,11 @@
-<h1>Editing Dish</h1>
+<div class="container">
 
-<%= render 'form' %>
+  <h1>Editing Dish</h1>
 
-<%= link_to 'Show', @dish %> |
-<%= link_to 'Menu', dishes_path %>
-<%= link_to 'Destroy', @dish, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <%= render 'form' %>
+
+    <%= link_to 'Show', @dish %> |
+    <%= link_to 'Menu', dishes_path %>
+    <%= link_to 'Destroy', @dish, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+</div>
