@@ -41,4 +41,23 @@ class DishesControllerTest < ActionController::TestCase
 
     assert_redirected_to dishes_path
   end
+
+  test "show menu courses" do
+    get :index
+    assert_response :success
+
+    assert response.body.include?("Mains")
+    assert response.body.include?("Desserts")
+  end
+
+  test "show dishes" do
+    get :index
+    assert_response :success
+
+    assert response.body.include?("with lemon rinds")
+    assert response.body.include?("8.99")
+  end
+
+
+
 end

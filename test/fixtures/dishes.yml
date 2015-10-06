@@ -1,13 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  description: MyText
-  price: 9.99
+  name: Pasta
+  description: with tomato sauce
+  price: 14
   course_id: 1
 
 two:
-  name: MyString
-  description: MyText
-  price: 9.99
-  course_id: 1
+  name: Chicken
+  description: with lemon rinds
+  price: 16
+  course_id: 2
+
+three:
+  name: Chocolate Mousse
+  description: with hazelnuts
+  price: 8.99
+  course_id: 3

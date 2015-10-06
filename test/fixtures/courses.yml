@@ -1,7 +1,10 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
+  name: Appetizers
 
 two:
-  name: MyString
+  name: Mains
+
+three:
+  name: Desserts
