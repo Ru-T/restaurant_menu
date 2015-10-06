@@ -11,9 +11,9 @@ The courses cannot be edited.
 ##Database Structure
 
 ![alt tag](database_table.png)
-[ERD Diagram](database_table.png)
+[ERD Diagram](https://github.com/Ru-T/restaurant_menu/blob/master/app/assets/images/database_table.png)
 
 ##Wireframe
 
 ![alt tag](wireframe.png)
-[ERD Diagram](wireframe.png)
+[ERD Diagram](https://github.com/Ru-T/restaurant_menu/blob/master/app/assets/images/wireframe.png)
